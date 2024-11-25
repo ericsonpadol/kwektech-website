@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
@@ -11,9 +12,7 @@ export default function Header() {
             href="/"
             className="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
           >
-            <h1 className="text-4xl Avenir tracking-tighter text-gray-900 md:text-4x1 lg:text-3xl">
-              NINE4
-            </h1>
+            <img src='/images/logo/kwektech-header-logo.png' height="400" width="240"/>
           </a>
           <button
             className="text-white cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none "
@@ -52,7 +51,7 @@ export default function Header() {
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Careers
+                  What we do
                 </a>
               </li>
               <li>
@@ -60,10 +59,18 @@ export default function Header() {
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  About Us
+                 What we think
                 </a>
               </li>
               <li>
+                <a
+                  href="/"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                 Who we are
+                </a>
+              </li>
+              {/* <li>
                 <a
                   className="inline-flex items-center px-4 py-2 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 bg-gray-900"
                   href="/"
@@ -80,7 +87,7 @@ export default function Header() {
                     />
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
